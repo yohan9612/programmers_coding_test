@@ -17,4 +17,4 @@
 - ex) 피보나치 수열
 - `점화식`을 이용하여 **인접한 항들 사이의 관계식**을 의미한다.
 - 피보나치 수열을 점화식으로 표현하면 다음과 같다.
-- $a_n = a_{n - 1} + a_{n - 2}, a_1 = 1, a_2 = 1$
+- ![a_n = a_{n - 1} + a_{n - 2}, a_1 = 1, a_2 = 1](http://latex.codecogs.com/gif.latex?Concentration%3D%5Cfrac%7BTotalTemplate%7D%7BTotalVolume%7D)

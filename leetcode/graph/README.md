@@ -23,6 +23,26 @@ visited = [False] * 9
 dfs(graph, 1, visited)
 ```
 
+```py
+def dfs(v, discovered=[]):
+    discovered.append(v)
+    for w in graph[v]:
+        if w not in discovered:
+            discovered = dfs(w, discovered)
+    return discovered
+
+def dfs(start):
+    discovered = []
+    stack = [start]
+    while stack:
+        v = stack.pop()
+        if v not in discovered:
+            discovered.append(v)
+            for w in graph[v]:
+                stack.append(w)
+    return discovered
+```
+
 # BFS
 
 ```py
@@ -53,4 +73,17 @@ graph = [
 
 visited = [False] * 9
 bfs(graph, 1, visited)
+```
+
+```py
+def bfs(start):
+    discovered = [start]
+    queue = [start]
+    while queue:
+        v = queue.pop(0)
+        for w in graph[v]:
+            if w not in discovered:
+                discovered.append(w)
+                queue.append(w)
+    return discovered
 ```
